@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Swingly</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="well col-sm-3 col-xs-4">
+  <form role="form">
+    <div class="form-group">
+      <label for="n">Rectangle count</label>
+      <input type="text" name="n" class="form-control" value="20">
+    </div>
+
+    <div class="form-group">
+      <label for="width">Rectangle width</label>
+      <input type="text" name="width" class="form-control" value="5">
+    </div>
+
+    <div class="form-group">
+      <label for="height">Rectangle height</label>
+      <input type="text" name="height" class="form-control" value="5">
+    </div>
+
+    <div class="form-group">
+      <label for="multiplier">Multiplier</label>
+      <input type="text" name="multiplier" class="form-control" value="20">
+    </div>
+
+    <div class="form-group">
+      <label for="time_modifier">Time modifier</label>
+      <input type="text" name="time_modifier" class="form-control" value="2">
+    </div>
+
+    <div class="form-group">
+      <label for="color">Color 1</label>
+      <select name="color" class="form-control">
+        <option value="red" selected>red</option>
+        <option value="blue">blue</option>
+        <option value="black">black</option>
+        <option value="cornflowerblue">cornflower blue</option>
+        <option value="coral">coral</option>
+        <option value="darkolivegreen">dark olive green</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="color2">Color 2</label>
+      <select name="color2" class="form-control">
+        <option value="red">red</option>
+        <option value="blue" selected>blue</option>
+        <option value="black">black</option>
+        <option value="cornflowerblue">cornflower blue</option>
+        <option value="coral">coral</option>
+        <option value="darkolivegreen">dark olive green</option>
+      </select>
+    </div>
+
+    <input type="submit" value="Animate!" class="btn btn-default">
+  </form>
+</div>
+<div class="well col-sm-9 col-xs-8">
+  <canvas id="myCanvas" width="500" height="500"></canvas>
+</div>
+
+<script src="js/swingly.js"></script>
+</body>
+</html>
